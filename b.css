@@ -1,0 +1,72 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+#board {
+    background-color: aqua;
+    background-image: url("./fb_new1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.playbtn, .stopbtn {
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playbtn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stopbtn {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.control-btn {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-btn:active {
+    background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .playbtn, .stopbtn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    #mobileControls {
+        display: flex;
+    }
+}
